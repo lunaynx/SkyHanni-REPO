@@ -88,12 +88,6 @@
         "fishing_experience": 4050,
         "rarity": "LEGENDARY",
         "rare": true
-      },
-      "The Sea Emperor": {
-        "chat_message": "§aThe Loch Emperor arises from the depths.",
-        "fishing_experience": 3375,
-        "rarity": "LEGENDARY",
-        "rare": true
       }
     }
   },
@@ -463,6 +457,12 @@
         "chat_message": "§aYou've hooked a Bogged!",
         "fishing_experience": 225,
         "rarity": "COMMON"
+      },
+      "The Loch Emperor": {
+        "chat_message": "§aThe Loch Emperor arises from the depths.",
+        "fishing_experience": 3375,
+        "rarity": "LEGENDARY",
+        "rare": true
       },
       "Stridersurfer": {
         "chat_message": "§aYou caught a Stridersurfer.",
