@@ -219,5 +219,9 @@
     "END_STONE_PROTECTOR": "ENDSTONE_PROTECTOR",
     "LOCH_EMPEROR": "SEA_EMPEROR",
     "BOGGED": "SEA_ARCHER"
+  },
+  "skyblock_command_id_overrides": {
+    "BOBBIN_TIME;3": "ULTIMATE_BOBBIN_TIME",
+    "STEALTH;1": "ENCHANTED_BOOK_STEALTH"
   }
 }
