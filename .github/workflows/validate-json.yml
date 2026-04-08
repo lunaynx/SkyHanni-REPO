@@ -1,0 +1,18 @@
+name: Validate JSONs
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  verify-json-validation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+      - name: json-yaml-validate
+        uses: GrantBirki/json-yaml-validate@v4.0.0
+        with:
+          comment: true
+          base_dir: constants
