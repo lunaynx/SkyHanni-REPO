@@ -1,6 +1,9 @@
 name: Validate JSONs
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [main]
+  pull_request:
 
 jobs:
   verify-json-validation:
@@ -11,5 +14,5 @@ jobs:
       - name: json-yaml-validate
         uses: GrantBirki/json-yaml-validate@v4.0.0
         with:
-          comment: ${{ github.event_name == 'pull_request' && !env.ACT }}
-          base: constants
+          comment: true
+          base_dir: constants
