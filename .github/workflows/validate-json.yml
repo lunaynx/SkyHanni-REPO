@@ -11,8 +11,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v6.0.2
-      - name: json-yaml-validate
-        uses: GrantBirki/json-yaml-validate@v4.0.0
+      - name: Validate JSON with Glob
+        uses: nhalstead/validate-json-action@v0.1.10
         with:
-          comment: true
-          base_dir: constants
+          jsons: constants/**/*.json
