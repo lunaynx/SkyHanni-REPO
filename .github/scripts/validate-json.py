@@ -21,7 +21,7 @@ for filename in changed_files:
         delim = "`"
 
     try:
-        with open(file, "r", encoding="utf-8") as fd:
+        with open(filename, "r", encoding="utf-8") as fd:
             json.load(fd)
     except (json.JSONDecodeError, UnicodeDecodeError) as e:
         print(f"::error file={file}::Invalid JSON")
