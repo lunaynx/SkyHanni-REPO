@@ -8,7 +8,7 @@ import sys
 errors = 0
 report = ""
 
-with open(".github/outputs/added_files.json", "r", encoding="utf-8") as fd:
+with open(".github/outputs/all_changed_files.json", "r", encoding="utf-8") as fd:
     changed_files = json.load(fd)
 
 print(f"Changed files: {changed_files}")
