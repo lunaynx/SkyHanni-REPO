@@ -59,5 +59,10 @@
     "15": {
       "gold_medals": 10,
       "jacob_tickets": 1000
+    },
+    "16": {
+      "gold_medals": 42,
+      "jacob_tickets": 6700
     }
   }
+}
