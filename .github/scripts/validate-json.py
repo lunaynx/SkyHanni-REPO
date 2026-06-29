@@ -3,7 +3,7 @@
 import json
 import os
 import random
-import sys
+import re
 
 errors = 0
 report = ""
@@ -26,7 +26,7 @@ for filename in changed_files:
     except (json.JSONDecodeError, UnicodeDecodeError) as e:
         print(f"::error file={filename}::Invalid JSON")
         # Extra whitespace around delimiter is intentional for escaping purposes
-        report += "### {delim} {filename} {delim}\n{result}\n\n"
+        report += f"### {delim} {filename} {delim}\n{e}\n\n"
         errors += 1
     else:
         print(f"::notice file={filename}::Valid JSON")
