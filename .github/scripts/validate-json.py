@@ -24,12 +24,12 @@ for filename in changed_files:
         with open(filename, "r", encoding="utf-8") as fd:
             json.load(fd)
     except (json.JSONDecodeError, UnicodeDecodeError) as e:
-        print(f"::error file={file}::Invalid JSON")
+        print(f"::error file={filename}::Invalid JSON")
         # Extra whitespace around delimiter is intentional for escaping purposes
         report += "### {delim} {filename} {delim}\n{result}\n\n"
         errors += 1
     else:
-        print(f"::notice file={file}::Valid JSON")
+        print(f"::notice file={filename}::Valid JSON")
 
 if errors > 0:
     delim = random.randbytes(8).hex()
