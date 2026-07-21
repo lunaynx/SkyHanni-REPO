@@ -187,10 +187,15 @@
           "value": true
         },
         {
+          "path": "misc.commands.betterWiki.useUnofficial",
+          "value": true
+        },
+        {
           "path": "misc.commands.betterWiki.useIndependent",
           "value": true
         }
       ],
+      "minimumAffectedVersion": "6.17.0",
       "affectedVersion": "7.99.0",
       "extraMessage": "Official wiki is dead"
     }
